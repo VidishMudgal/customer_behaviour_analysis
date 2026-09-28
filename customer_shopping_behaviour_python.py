@@ -8,7 +8,7 @@ df = pd.read_csv('customer_shopping_behavior.csv')
 # data cleaning
 df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_').str.replace('(', '').str.replace(')', '')
 
-df.drop_duplicates()
+df = df.drop_duplicates()
 
 # print(df.head())
 
